@@ -20,5 +20,11 @@ module.exports = {
     semi: ["error", "always"],
     indent: ["error", 2],
     "no-multi-spaces": ["error"],
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
   },
 };
