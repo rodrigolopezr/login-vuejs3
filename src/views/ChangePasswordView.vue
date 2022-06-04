@@ -47,11 +47,12 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
+import type { Ref } from "vue";
 import { Field, Form, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 import { useRouter } from "vue-router";
 
-const password = ref("");
+const password: Ref<string> = ref("");
 
 const router = useRouter();
 

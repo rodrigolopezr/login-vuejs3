@@ -11,12 +11,4 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import { onMounted } from "vue";
-
-onMounted(() => {
-  //if (localStorage.getItem("users") === null) {
-  //localStorage.setItem("users", "");
-  //}
-});
-</script>
+<script lang="ts" setup></script>

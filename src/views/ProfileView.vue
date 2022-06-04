@@ -8,8 +8,9 @@
 
 <script lang="ts" setup>
 import { ref, onMounted } from "vue";
+import type { Ref } from "vue";
 
-const username = ref("");
+const username: Ref<string> = ref("");
 
 onMounted(() => {
   const user = JSON.parse(localStorage.getItem("user") ?? JSON.stringify([]));

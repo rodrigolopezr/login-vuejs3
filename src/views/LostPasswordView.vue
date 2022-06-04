@@ -98,12 +98,13 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
+import type { Ref } from "vue";
 import { Field, Form, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 import { useRouter, useRoute } from "vue-router";
 
-const mail = ref("");
-const password = ref("");
+const mail: Ref<string> = ref("");
+const password: Ref<string> = ref("");
 
 const router = useRouter();
 const route = useRoute();
