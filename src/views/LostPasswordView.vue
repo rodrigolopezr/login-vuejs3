@@ -54,7 +54,7 @@
     </template>
     <template v-if="route.query.mail && route.query.code">
       <Form
-        @submit="onSubmitPassword"
+        @submit="signinResetPass"
         :validation-schema="schemaPassword"
         class="w-full max-w-sm"
       >
